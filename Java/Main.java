@@ -1,17 +1,13 @@
 class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) {{
+
         System.out.println("Hola Mundo");
-
-        Car car = new Car();
-        car.license = "BRO321";
-        car.driver = "Martin Fierro";
-        car.passenger = 2;
+        Car car = new Car("BRO321", new Account("Martin Fierro", "AND123"));
+        car.passegenger = 2;
         car.printDataC();
 
-        Car car2 = new Car();
-        car2.license = "sHu371";
-        car2.driver = "Marta Pedran";
-        car2.passenger = 1;
-        car.printDataC();
+        Car car2 = new Car("sHu371", new Account("Marta Pedran", "ANDA876"));
+        car2.passegenger = 3;
+        car2.printDataC();
     }
 }
